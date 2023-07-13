@@ -17,7 +17,7 @@ jobs:
             - name: Get code from Repo
               uses: actions/checkout@v3
             - name: Install dependencies
-              run: nmp ci
+              run: npm ci
             - name: Test
               run: npm run test
     Building:
@@ -26,7 +26,7 @@ jobs:
             - name: Get code from Repo
               uses: actions/checkout@v3
             - name: Install dependencies
-              run: nmp ci
+              run: npm ci
             - name: Build
               run: npm run build
             - name: Deploy
